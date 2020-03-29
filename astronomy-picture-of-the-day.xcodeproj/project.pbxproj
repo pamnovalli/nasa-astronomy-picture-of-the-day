@@ -1,0 +1,706 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		B37480AD2431269D00601DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480AC2431269D00601DE0 /* AppDelegate.swift */; };
+		B37480B6243126A100601DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37480B5243126A100601DE0 /* Assets.xcassets */; };
+		B37480C4243126A100601DE0 /* astronomy_picture_of_the_dayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480C3243126A100601DE0 /* astronomy_picture_of_the_dayTests.swift */; };
+		B37480CF243126A100601DE0 /* astronomy_picture_of_the_dayUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480CE243126A100601DE0 /* astronomy_picture_of_the_dayUITests.swift */; };
+		B37480DD2431291200601DE0 /* AstronomyPicture .swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480DC2431291200601DE0 /* AstronomyPicture .swift */; };
+		B37480DF24312A0300601DE0 /* RequestType.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480DE24312A0300601DE0 /* RequestType.swift */; };
+		B37480E224312A7A00601DE0 /* ApiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480E124312A7A00601DE0 /* ApiRequest.swift */; };
+		B37480E424312CB000601DE0 /* APICalling.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480E324312CB000601DE0 /* APICalling.swift */; };
+		B37480E724313A0300601DE0 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480E624313A0300601DE0 /* InitialCoordinator.swift */; };
+		B37480EA24313BE200601DE0 /* AstronomyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480E824313BE200601DE0 /* AstronomyPictureViewController.swift */; };
+		B37480EB24313BE200601DE0 /* AstronomyPictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B37480E924313BE200601DE0 /* AstronomyPictureViewController.xib */; };
+		B37480F0243142AE00601DE0 /* AstronomyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480EF243142AE00601DE0 /* AstronomyPictureViewModel.swift */; };
+		C83A59B3EF62DE3DFF5F46E6 /* Pods_astronomy_picture_of_the_day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C07BDB608E1596070A055FA /* Pods_astronomy_picture_of_the_day.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B37480C0243126A100601DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B37480A12431269C00601DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37480A82431269D00601DE0;
+			remoteInfo = "astronomy-picture-of-the-day";
+		};
+		B37480CB243126A100601DE0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = B37480A12431269C00601DE0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B37480A82431269D00601DE0;
+			remoteInfo = "astronomy-picture-of-the-day";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		24C45C796CE61DDA0A91BF8B /* Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.release.xcconfig"; path = "Target Support Files/Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests/Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.release.xcconfig"; sourceTree = "<group>"; };
+		49D1BD779FEAE15A74A85794 /* Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.debug.xcconfig"; path = "Target Support Files/Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests/Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.debug.xcconfig"; sourceTree = "<group>"; };
+		5753A6EC72CA7B98B6502B2A /* Pods-astronomy-picture-of-the-day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astronomy-picture-of-the-day.debug.xcconfig"; path = "Target Support Files/Pods-astronomy-picture-of-the-day/Pods-astronomy-picture-of-the-day.debug.xcconfig"; sourceTree = "<group>"; };
+		9C07BDB608E1596070A055FA /* Pods_astronomy_picture_of_the_day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_astronomy_picture_of_the_day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37480A92431269D00601DE0 /* astronomy-picture-of-the-day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "astronomy-picture-of-the-day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37480AC2431269D00601DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		B37480B5243126A100601DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		B37480BA243126A100601DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37480BF243126A100601DE0 /* astronomy-picture-of-the-dayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "astronomy-picture-of-the-dayTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37480C3243126A100601DE0 /* astronomy_picture_of_the_dayTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astronomy_picture_of_the_dayTests.swift; sourceTree = "<group>"; };
+		B37480C5243126A100601DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37480CA243126A100601DE0 /* astronomy-picture-of-the-dayUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "astronomy-picture-of-the-dayUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B37480CE243126A100601DE0 /* astronomy_picture_of_the_dayUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = astronomy_picture_of_the_dayUITests.swift; sourceTree = "<group>"; };
+		B37480D0243126A100601DE0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B37480DC2431291200601DE0 /* AstronomyPicture .swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "AstronomyPicture .swift"; sourceTree = "<group>"; };
+		B37480DE24312A0300601DE0 /* RequestType.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestType.swift; sourceTree = "<group>"; };
+		B37480E124312A7A00601DE0 /* ApiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ApiRequest.swift; sourceTree = "<group>"; };
+		B37480E324312CB000601DE0 /* APICalling.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APICalling.swift; sourceTree = "<group>"; };
+		B37480E624313A0300601DE0 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
+		B37480E824313BE200601DE0 /* AstronomyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewController.swift; sourceTree = "<group>"; };
+		B37480E924313BE200601DE0 /* AstronomyPictureViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AstronomyPictureViewController.xib; sourceTree = "<group>"; };
+		B37480EF243142AE00601DE0 /* AstronomyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewModel.swift; sourceTree = "<group>"; };
+		B93779DD190C3013FB1A139C /* Pods-astronomy-picture-of-the-day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astronomy-picture-of-the-day.release.xcconfig"; path = "Target Support Files/Pods-astronomy-picture-of-the-day/Pods-astronomy-picture-of-the-day.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		B37480A62431269D00601DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				C83A59B3EF62DE3DFF5F46E6 /* Pods_astronomy_picture_of_the_day.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37480BC243126A100601DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37480C7243126A100601DE0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		5D6F0E558A41854D26B97F3C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				5753A6EC72CA7B98B6502B2A /* Pods-astronomy-picture-of-the-day.debug.xcconfig */,
+				B93779DD190C3013FB1A139C /* Pods-astronomy-picture-of-the-day.release.xcconfig */,
+				49D1BD779FEAE15A74A85794 /* Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.debug.xcconfig */,
+				24C45C796CE61DDA0A91BF8B /* Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		5FAEAE1A00093C65C7466B23 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9C07BDB608E1596070A055FA /* Pods_astronomy_picture_of_the_day.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B37480A02431269C00601DE0 = {
+			isa = PBXGroup;
+			children = (
+				B37480AB2431269D00601DE0 /* astronomy-picture-of-the-day */,
+				B37480C2243126A100601DE0 /* astronomy-picture-of-the-dayTests */,
+				B37480CD243126A100601DE0 /* astronomy-picture-of-the-dayUITests */,
+				B37480AA2431269D00601DE0 /* Products */,
+				5D6F0E558A41854D26B97F3C /* Pods */,
+				5FAEAE1A00093C65C7466B23 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		B37480AA2431269D00601DE0 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				B37480A92431269D00601DE0 /* astronomy-picture-of-the-day.app */,
+				B37480BF243126A100601DE0 /* astronomy-picture-of-the-dayTests.xctest */,
+				B37480CA243126A100601DE0 /* astronomy-picture-of-the-dayUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		B37480AB2431269D00601DE0 /* astronomy-picture-of-the-day */ = {
+			isa = PBXGroup;
+			children = (
+				B37480E024312A5600601DE0 /* Model */,
+				B37480ED2431426100601DE0 /* View */,
+				B37480EE2431428600601DE0 /* ViewModel */,
+				B37480EC2431424D00601DE0 /* Coordinator */,
+				B37480E52431374700601DE0 /* Network */,
+				B37480AC2431269D00601DE0 /* AppDelegate.swift */,
+				B37480B5243126A100601DE0 /* Assets.xcassets */,
+				B37480BA243126A100601DE0 /* Info.plist */,
+			);
+			path = "astronomy-picture-of-the-day";
+			sourceTree = "<group>";
+		};
+		B37480C2243126A100601DE0 /* astronomy-picture-of-the-dayTests */ = {
+			isa = PBXGroup;
+			children = (
+				B37480C3243126A100601DE0 /* astronomy_picture_of_the_dayTests.swift */,
+				B37480C5243126A100601DE0 /* Info.plist */,
+			);
+			path = "astronomy-picture-of-the-dayTests";
+			sourceTree = "<group>";
+		};
+		B37480CD243126A100601DE0 /* astronomy-picture-of-the-dayUITests */ = {
+			isa = PBXGroup;
+			children = (
+				B37480CE243126A100601DE0 /* astronomy_picture_of_the_dayUITests.swift */,
+				B37480D0243126A100601DE0 /* Info.plist */,
+			);
+			path = "astronomy-picture-of-the-dayUITests";
+			sourceTree = "<group>";
+		};
+		B37480E024312A5600601DE0 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B37480DC2431291200601DE0 /* AstronomyPicture .swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B37480E52431374700601DE0 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				B37480E324312CB000601DE0 /* APICalling.swift */,
+				B37480DE24312A0300601DE0 /* RequestType.swift */,
+				B37480E124312A7A00601DE0 /* ApiRequest.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		B37480EC2431424D00601DE0 /* Coordinator */ = {
+			isa = PBXGroup;
+			children = (
+				B37480E624313A0300601DE0 /* InitialCoordinator.swift */,
+			);
+			path = Coordinator;
+			sourceTree = "<group>";
+		};
+		B37480ED2431426100601DE0 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B37480E824313BE200601DE0 /* AstronomyPictureViewController.swift */,
+				B37480E924313BE200601DE0 /* AstronomyPictureViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		B37480EE2431428600601DE0 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				B37480EF243142AE00601DE0 /* AstronomyPictureViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		B37480A82431269D00601DE0 /* astronomy-picture-of-the-day */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37480D3243126A100601DE0 /* Build configuration list for PBXNativeTarget "astronomy-picture-of-the-day" */;
+			buildPhases = (
+				CEE8AD7ACE54F6C58DABA3C6 /* [CP] Check Pods Manifest.lock */,
+				B37480A52431269D00601DE0 /* Sources */,
+				B37480A62431269D00601DE0 /* Frameworks */,
+				B37480A72431269D00601DE0 /* Resources */,
+				A7B92EA82B21089E8FD5948D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "astronomy-picture-of-the-day";
+			productName = "astronomy-picture-of-the-day";
+			productReference = B37480A92431269D00601DE0 /* astronomy-picture-of-the-day.app */;
+			productType = "com.apple.product-type.application";
+		};
+		B37480BE243126A100601DE0 /* astronomy-picture-of-the-dayTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37480D6243126A100601DE0 /* Build configuration list for PBXNativeTarget "astronomy-picture-of-the-dayTests" */;
+			buildPhases = (
+				B37480BB243126A100601DE0 /* Sources */,
+				B37480BC243126A100601DE0 /* Frameworks */,
+				B37480BD243126A100601DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37480C1243126A100601DE0 /* PBXTargetDependency */,
+			);
+			name = "astronomy-picture-of-the-dayTests";
+			productName = "astronomy-picture-of-the-dayTests";
+			productReference = B37480BF243126A100601DE0 /* astronomy-picture-of-the-dayTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		B37480C9243126A100601DE0 /* astronomy-picture-of-the-dayUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B37480D9243126A100601DE0 /* Build configuration list for PBXNativeTarget "astronomy-picture-of-the-dayUITests" */;
+			buildPhases = (
+				B37480C6243126A100601DE0 /* Sources */,
+				B37480C7243126A100601DE0 /* Frameworks */,
+				B37480C8243126A100601DE0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				B37480CC243126A100601DE0 /* PBXTargetDependency */,
+			);
+			name = "astronomy-picture-of-the-dayUITests";
+			productName = "astronomy-picture-of-the-dayUITests";
+			productReference = B37480CA243126A100601DE0 /* astronomy-picture-of-the-dayUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		B37480A12431269C00601DE0 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1130;
+				LastUpgradeCheck = 1130;
+				ORGANIZATIONNAME = "Pamela Ianovalli";
+				TargetAttributes = {
+					B37480A82431269D00601DE0 = {
+						CreatedOnToolsVersion = 11.3.1;
+					};
+					B37480BE243126A100601DE0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B37480A82431269D00601DE0;
+					};
+					B37480C9243126A100601DE0 = {
+						CreatedOnToolsVersion = 11.3.1;
+						TestTargetID = B37480A82431269D00601DE0;
+					};
+				};
+			};
+			buildConfigurationList = B37480A42431269C00601DE0 /* Build configuration list for PBXProject "astronomy-picture-of-the-day" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = B37480A02431269C00601DE0;
+			productRefGroup = B37480AA2431269D00601DE0 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				B37480A82431269D00601DE0 /* astronomy-picture-of-the-day */,
+				B37480BE243126A100601DE0 /* astronomy-picture-of-the-dayTests */,
+				B37480C9243126A100601DE0 /* astronomy-picture-of-the-dayUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		B37480A72431269D00601DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37480EB24313BE200601DE0 /* AstronomyPictureViewController.xib in Resources */,
+				B37480B6243126A100601DE0 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37480BD243126A100601DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37480C8243126A100601DE0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		A7B92EA82B21089E8FD5948D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-astronomy-picture-of-the-day/Pods-astronomy-picture-of-the-day-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-astronomy-picture-of-the-day/Pods-astronomy-picture-of-the-day-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-astronomy-picture-of-the-day/Pods-astronomy-picture-of-the-day-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEE8AD7ACE54F6C58DABA3C6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-astronomy-picture-of-the-day-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B37480A52431269D00601DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37480AD2431269D00601DE0 /* AppDelegate.swift in Sources */,
+				B37480E724313A0300601DE0 /* InitialCoordinator.swift in Sources */,
+				B37480E224312A7A00601DE0 /* ApiRequest.swift in Sources */,
+				B37480E424312CB000601DE0 /* APICalling.swift in Sources */,
+				B37480DD2431291200601DE0 /* AstronomyPicture .swift in Sources */,
+				B37480EA24313BE200601DE0 /* AstronomyPictureViewController.swift in Sources */,
+				B37480F0243142AE00601DE0 /* AstronomyPictureViewModel.swift in Sources */,
+				B37480DF24312A0300601DE0 /* RequestType.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37480BB243126A100601DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37480C4243126A100601DE0 /* astronomy_picture_of_the_dayTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B37480C6243126A100601DE0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B37480CF243126A100601DE0 /* astronomy_picture_of_the_dayUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B37480C1243126A100601DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37480A82431269D00601DE0 /* astronomy-picture-of-the-day */;
+			targetProxy = B37480C0243126A100601DE0 /* PBXContainerItemProxy */;
+		};
+		B37480CC243126A100601DE0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B37480A82431269D00601DE0 /* astronomy-picture-of-the-day */;
+			targetProxy = B37480CB243126A100601DE0 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		B37480D1243126A100601DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		B37480D2243126A100601DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		B37480D4243126A100601DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5753A6EC72CA7B98B6502B2A /* Pods-astronomy-picture-of-the-day.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "astronomy-picture-of-the-day/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.astronomy-picture-of-the-day";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		B37480D5243126A100601DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B93779DD190C3013FB1A139C /* Pods-astronomy-picture-of-the-day.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "astronomy-picture-of-the-day/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.astronomy-picture-of-the-day";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		B37480D7243126A100601DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "astronomy-picture-of-the-dayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.astronomy-picture-of-the-dayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astronomy-picture-of-the-day.app/astronomy-picture-of-the-day";
+			};
+			name = Debug;
+		};
+		B37480D8243126A100601DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "astronomy-picture-of-the-dayTests/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.2;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.astronomy-picture-of-the-dayTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/astronomy-picture-of-the-day.app/astronomy-picture-of-the-day";
+			};
+			name = Release;
+		};
+		B37480DA243126A100601DE0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "astronomy-picture-of-the-dayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.astronomy-picture-of-the-dayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "astronomy-picture-of-the-day";
+			};
+			name = Debug;
+		};
+		B37480DB243126A100601DE0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = X74VG8LAZG;
+				INFOPLIST_FILE = "astronomy-picture-of-the-dayUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "Pamela-Ianovalli.astronomy-picture-of-the-dayUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = "astronomy-picture-of-the-day";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		B37480A42431269C00601DE0 /* Build configuration list for PBXProject "astronomy-picture-of-the-day" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37480D1243126A100601DE0 /* Debug */,
+				B37480D2243126A100601DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37480D3243126A100601DE0 /* Build configuration list for PBXNativeTarget "astronomy-picture-of-the-day" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37480D4243126A100601DE0 /* Debug */,
+				B37480D5243126A100601DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37480D6243126A100601DE0 /* Build configuration list for PBXNativeTarget "astronomy-picture-of-the-dayTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37480D7243126A100601DE0 /* Debug */,
+				B37480D8243126A100601DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B37480D9243126A100601DE0 /* Build configuration list for PBXNativeTarget "astronomy-picture-of-the-dayUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B37480DA243126A100601DE0 /* Debug */,
+				B37480DB243126A100601DE0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = B37480A12431269C00601DE0 /* Project object */;
+}

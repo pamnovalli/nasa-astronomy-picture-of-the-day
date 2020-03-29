@@ -19,7 +19,7 @@ class InitialCoordinator {
     }
     
     func start() {
-        rootViewController = UIViewController(nibName: "AstronomyPictureViewController", bundle: Bundle.main)
+        rootViewController = AstronomyPictureViewController()
         window.rootViewController = rootViewController
         window.makeKeyAndVisible()
     }

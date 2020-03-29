@@ -9,14 +9,24 @@
 import UIKit
 
 class AstronomyPictureViewController: UIViewController {
+    
+    let viewModel = AstronomyPictureViewModel()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        viewModel.delegate = self
     }
     
     override func viewWillAppear(_ animated: Bool) {
-        
+        viewModel.loadAstronomyPictures()
     }
 
+}
+
+extension AstronomyPictureViewController: AstronomyPictureViewModelProtocol {
+    func didloadAstronomyPictures() {
+        
+    }
+    
+    
 }
