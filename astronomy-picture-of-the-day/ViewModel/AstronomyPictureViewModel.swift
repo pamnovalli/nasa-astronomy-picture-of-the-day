@@ -20,12 +20,15 @@ class AstronomyPictureViewModel {
     private let disposeBag = DisposeBag()
     private let request = APIRequest()
     var delegate: AstronomyPictureViewModelProtocol?
+    var astronomyPicture: AstronomyPicture?
     
     func loadAstronomyPictures() {
         let result : Observable<AstronomyPicture> = apiCalling.send(apiRequest: request)
         result.observeOn(MainScheduler.instance)
             .subscribe(onNext: { (astronomyPicture: AstronomyPicture) in
+                self.astronomyPicture = astronomyPicture
                 print(astronomyPicture)
+                self.delegate?.didloadAstronomyPictures()
                 })
             .disposed(by: disposeBag)
     }

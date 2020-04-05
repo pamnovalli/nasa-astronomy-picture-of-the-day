@@ -7,6 +7,8 @@ target 'astronomy-picture-of-the-day' do
 
   pod 'RxSwift', '5.1.0'
   pod 'RxCocoa', '5.1.0'
+  pod 'Kingfisher', '~> 5.0'
+
 
 end
 

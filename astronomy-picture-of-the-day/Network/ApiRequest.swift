@@ -10,7 +10,7 @@ import Foundation
 
 class APIRequest {
     
-    let baseURL = URL(string: "https://api.nasa.gov/planetary/apod?api_key=FAKgn6usJQaAdfsKIbMbd7OYI0vU8sPMuA467GPK")
+    let baseURL = URL(string: "https://api.nasa.gov/planetary/apod?api_key=qFamLEfakF4DtHjxKb6BZcOu9wLC23nPZjBUIc91")
     var method = RequestType.GET
     
     

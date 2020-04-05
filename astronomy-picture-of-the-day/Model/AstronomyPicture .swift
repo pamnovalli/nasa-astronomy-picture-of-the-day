@@ -10,7 +10,6 @@ import Foundation
 
 struct AstronomyPicture: Decodable {
     
-    let copyright: String
     let date: String
     let explanation: String
     let hdurl: String
@@ -20,7 +19,6 @@ struct AstronomyPicture: Decodable {
     let url: String
 
     enum CodingKeys: String, CodingKey {
-        case copyright
         case date
         case explanation
         case hdurl
@@ -29,9 +27,8 @@ struct AstronomyPicture: Decodable {
         case title
         case url
     }
-    init(copyright: String, date: String, explanation: String, hdurl: String,
+    init(date: String, explanation: String, hdurl: String,
          mediaType: String, serviceVersion: String, title: String, url: String) {
-        self.copyright = copyright
         self.date = date
         self.explanation = explanation
         self.hdurl = hdurl
@@ -43,7 +40,6 @@ struct AstronomyPicture: Decodable {
     
     init(from decoder: Decoder) throws {
         let container = try decoder.container(keyedBy: CodingKeys.self)
-        let copyright: String = try container.decode(String.self, forKey: .copyright)
         let date: String = try container.decode(String.self, forKey: .date)
         let explanation: String = try container.decode(String.self, forKey: .explanation)
         let hdurl: String = try container.decode(String.self, forKey: .hdurl)
@@ -52,7 +48,7 @@ struct AstronomyPicture: Decodable {
         let title: String = try container.decode(String.self, forKey: .title)
         let url: String = try container.decode(String.self, forKey: .url)
 
-        self.init(copyright: copyright, date: date, explanation: explanation, hdurl: hdurl,
+        self.init(date: date, explanation: explanation, hdurl: hdurl,
         mediaType: mediaType, serviceVersion: serviceVersion, title: title, url: url)
     }
     
