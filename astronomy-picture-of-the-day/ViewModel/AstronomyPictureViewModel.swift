@@ -28,11 +28,12 @@ class AstronomyPictureViewModel {
         self.requester = requester
         self.dispose = dispose
     }
-    
+
     func loadAstronomyPictures() {
-        let result : Observable<AstronomyPicture> = apiCalling.send(apiRequest: requester)
+        let result : Observable<AstronomyPicture> = apiCalling.send(requester: requester)
         result.observeOn(MainScheduler.instance)
             .subscribe(onNext: { (astronomyPicture: AstronomyPicture) in
+                print(astronomyPicture)
                 self.astronomyPicture = astronomyPicture
                 self.delegate?.didloadAstronomyPictures()
                 })

@@ -9,7 +9,7 @@
 import Foundation
 
 class Endpoint {
-    
- static let baseUrl = "https://api.nasa.gov/planetary/apod?api_key=qFamLEfakF4DtHjxKb6BZcOu9wLC23nPZjBUIc91"
-    
+
+    let baseUrl = "https://api.nasa.gov/planetary/apod?api_key=qFamLEfakF4DtHjxKb6BZcOu9wLC23nPZjBUIc91"
+
 }

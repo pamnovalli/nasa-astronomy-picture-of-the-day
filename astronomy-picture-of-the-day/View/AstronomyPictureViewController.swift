@@ -11,21 +11,18 @@ import Kingfisher
 
 class AstronomyPictureViewController: UIViewController {
     
-    lazy var contentViewSize = CGSize(width: self.view.frame.width, height: self.view.frame.height + 400)
     
-    lazy var scrollView: UIScrollView = {
+    let scrollView: UIScrollView = {
         let scroll = UIScrollView()
-        let screensize: CGRect = UIScreen.main.bounds
         scroll.backgroundColor = .white
-        scroll.frame = CGRect(x: 0, y: 0, width: screensize.width, height: screensize.height)
-        scroll.contentSize = contentViewSize
+        scroll.frame = UIScreen.main.bounds
+        scroll.translatesAutoresizingMaskIntoConstraints = false
         return scroll
     }()
     
-    lazy var containerView: UIView = {
+    let containerView: UIView = {
         let view = UIView()
-        view.backgroundColor = .white
-        view.frame.size = contentViewSize
+        view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
     
@@ -37,7 +34,7 @@ class AstronomyPictureViewController: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         return label
     }()
-        
+    
     let imageView: UIImageView = {
         let image = UIImageView()
         image.sizeToFit()
@@ -47,6 +44,7 @@ class AstronomyPictureViewController: UIViewController {
     
     let descriptionLabel: UILabel = {
         let label = UILabel()
+        label.textAlignment = .justified
         label.setContentHuggingPriority(UILayoutPriority.required, for: .horizontal)
         label.contentCompressionResistancePriority(for: .horizontal)
         label.numberOfLines = 0
@@ -66,23 +64,32 @@ class AstronomyPictureViewController: UIViewController {
         containerView.addSubview(titleLabel)
         containerView.addSubview(imageView)
         containerView.addSubview(descriptionLabel)
+        scrollView.widthAnchor.constraint(equalTo: view.widthAnchor).isActive = true
+        scrollView.heightAnchor.constraint(equalTo: view.heightAnchor, constant: 400).isActive = true
         setupLayout()
-        
     }
-    
+
     func setupLayout(){
         NSLayoutConstraint.activate([
-            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant:  10),
-            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 40),
-            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -40),
+            containerView.topAnchor.constraint(equalTo: scrollView.topAnchor),
+            containerView.widthAnchor.constraint(equalTo: scrollView.widthAnchor),
+            containerView.heightAnchor.constraint(equalTo: scrollView.heightAnchor),
+            containerView.leadingAnchor.constraint(equalTo: scrollView.leadingAnchor, constant: 0),
+            containerView.trailingAnchor.constraint(equalTo: scrollView.trailingAnchor, constant: 0),
+            containerView.bottomAnchor.constraint(equalTo: scrollView.bottomAnchor, constant: -80),
+            titleLabel.topAnchor.constraint(equalTo: containerView.topAnchor, constant:  50),
+            titleLabel.heightAnchor.constraint(equalToConstant: 40),
+            titleLabel.leadingAnchor.constraint(equalTo: containerView.leadingAnchor, constant: 10),
+            titleLabel.trailingAnchor.constraint(equalTo: containerView.trailingAnchor, constant: -10),
             imageView.topAnchor.constraint(equalTo: titleLabel.bottomAnchor, constant: 30),
             imageView.leadingAnchor.constraint(equalTo: titleLabel.leadingAnchor),
             imageView.trailingAnchor.constraint(equalTo: titleLabel.trailingAnchor),
-            imageView.heightAnchor.constraint(equalToConstant: 300),
-            imageView.widthAnchor.constraint(equalToConstant: 200),
+            imageView.heightAnchor.constraint(greaterThanOrEqualToConstant: 300),
+            imageView.widthAnchor.constraint(greaterThanOrEqualToConstant: 200),
             descriptionLabel.topAnchor.constraint(equalTo: imageView.bottomAnchor, constant: 30),
             descriptionLabel.leadingAnchor.constraint(equalTo: imageView.leadingAnchor),
             descriptionLabel.trailingAnchor.constraint(equalTo: imageView.trailingAnchor),
+            descriptionLabel.widthAnchor.constraint(equalTo: imageView.widthAnchor),
             descriptionLabel.heightAnchor.constraint(greaterThanOrEqualToConstant: 100),
         ])
     }
@@ -100,7 +107,8 @@ extension AstronomyPictureViewController: AstronomyPictureViewModelProtocol {
             self.descriptionLabel.text = self.viewModel.astronomyPicture?.explanation
             guard let url = self.viewModel.astronomyPicture?.url else { return }
             self.imageView.kf.setImage(with: URL(string: url))
-        }
     }
     
+  }
+
 }

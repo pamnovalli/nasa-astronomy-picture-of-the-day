@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B346E415244BF9F8006166E9 /* Endpoints.swift in Sources */ = {isa = PBXBuildFile; fileRef = B346E414244BF9F8006166E9 /* Endpoints.swift */; };
 		B37480AD2431269D00601DE0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480AC2431269D00601DE0 /* AppDelegate.swift */; };
 		B37480B6243126A100601DE0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B37480B5243126A100601DE0 /* Assets.xcassets */; };
 		B37480C4243126A100601DE0 /* astronomy_picture_of_the_dayTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480C3243126A100601DE0 /* astronomy_picture_of_the_dayTests.swift */; };
@@ -19,6 +18,8 @@
 		B37480E724313A0300601DE0 /* InitialCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480E624313A0300601DE0 /* InitialCoordinator.swift */; };
 		B37480EA24313BE200601DE0 /* AstronomyPictureViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480E824313BE200601DE0 /* AstronomyPictureViewController.swift */; };
 		B37480F0243142AE00601DE0 /* AstronomyPictureViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B37480EF243142AE00601DE0 /* AstronomyPictureViewModel.swift */; };
+		B3BAA3BD244D01A300EEC025 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAA3BC244D01A300EEC025 /* Requestable.swift */; };
+		B3BAA3BF244D047500EEC025 /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3BAA3BE244D047500EEC025 /* Endpoint.swift */; };
 		C83A59B3EF62DE3DFF5F46E6 /* Pods_astronomy_picture_of_the_day.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9C07BDB608E1596070A055FA /* Pods_astronomy_picture_of_the_day.framework */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +45,6 @@
 		49D1BD779FEAE15A74A85794 /* Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.debug.xcconfig"; path = "Target Support Files/Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests/Pods-astronomy-picture-of-the-day-astronomy-picture-of-the-dayTests.debug.xcconfig"; sourceTree = "<group>"; };
 		5753A6EC72CA7B98B6502B2A /* Pods-astronomy-picture-of-the-day.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astronomy-picture-of-the-day.debug.xcconfig"; path = "Target Support Files/Pods-astronomy-picture-of-the-day/Pods-astronomy-picture-of-the-day.debug.xcconfig"; sourceTree = "<group>"; };
 		9C07BDB608E1596070A055FA /* Pods_astronomy_picture_of_the_day.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_astronomy_picture_of_the_day.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		B346E414244BF9F8006166E9 /* Endpoints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoints.swift; sourceTree = "<group>"; };
 		B37480A92431269D00601DE0 /* astronomy-picture-of-the-day.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "astronomy-picture-of-the-day.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B37480AC2431269D00601DE0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B37480B5243126A100601DE0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -62,6 +62,8 @@
 		B37480E624313A0300601DE0 /* InitialCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InitialCoordinator.swift; sourceTree = "<group>"; };
 		B37480E824313BE200601DE0 /* AstronomyPictureViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewController.swift; sourceTree = "<group>"; };
 		B37480EF243142AE00601DE0 /* AstronomyPictureViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AstronomyPictureViewModel.swift; sourceTree = "<group>"; };
+		B3BAA3BC244D01A300EEC025 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
+		B3BAA3BE244D047500EEC025 /* Endpoint.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
 		B93779DD190C3013FB1A139C /* Pods-astronomy-picture-of-the-day.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-astronomy-picture-of-the-day.release.xcconfig"; path = "Target Support Files/Pods-astronomy-picture-of-the-day/Pods-astronomy-picture-of-the-day.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -176,10 +178,11 @@
 		B37480E52431374700601DE0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				B3BAA3BE244D047500EEC025 /* Endpoint.swift */,
 				B37480E324312CB000601DE0 /* APICalling.swift */,
 				B37480DE24312A0300601DE0 /* RequestType.swift */,
 				B37480E124312A7A00601DE0 /* ApiRequest.swift */,
-				B346E414244BF9F8006166E9 /* Endpoints.swift */,
+				B3BAA3BC244D01A300EEC025 /* Requestable.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -385,10 +388,11 @@
 				B37480E724313A0300601DE0 /* InitialCoordinator.swift in Sources */,
 				B37480E224312A7A00601DE0 /* ApiRequest.swift in Sources */,
 				B37480E424312CB000601DE0 /* APICalling.swift in Sources */,
+				B3BAA3BF244D047500EEC025 /* Endpoint.swift in Sources */,
 				B37480DD2431291200601DE0 /* AstronomyPicture .swift in Sources */,
+				B3BAA3BD244D01A300EEC025 /* Requestable.swift in Sources */,
 				B37480EA24313BE200601DE0 /* AstronomyPictureViewController.swift in Sources */,
 				B37480F0243142AE00601DE0 /* AstronomyPictureViewModel.swift in Sources */,
-				B346E415244BF9F8006166E9 /* Endpoints.swift in Sources */,
 				B37480DF24312A0300601DE0 /* RequestType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

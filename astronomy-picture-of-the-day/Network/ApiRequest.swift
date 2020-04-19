@@ -8,12 +8,12 @@
 
 import Foundation
 
-class APIRequester {
+class APIRequester: Requestable {
     
    private let method: RequestType
    private let url: String
     
-    init(url: String = Endpoint.baseUrl,
+    init(url: String = Endpoint().baseUrl,
          method: RequestType = RequestType.GET
     ) {
         self.method = method
@@ -21,7 +21,8 @@ class APIRequester {
     }
     
     func request() -> URLRequest {
-        var request = URLRequest(url: URL(string: url)!)
+        guard let url = URL(string: self.url) else { preconditionFailure("Convert Error")}
+        var request = URLRequest(url: url)
         request.httpMethod = method.rawValue
         request.addValue("aplication/json", forHTTPHeaderField: "Accept")
         return request
