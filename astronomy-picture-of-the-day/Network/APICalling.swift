@@ -12,9 +12,9 @@ import RxSwift
 
 class APICalling {
     
-    func send<T: Decodable>(apiRequest: APIRequest) -> Observable<T> {
+    func send<T: Decodable>(apiRequest: APIRequester) -> Observable<T> {
         return Observable<T>.create { observer in
-            let request = apiRequest.request(with: apiRequest.baseURL!) 
+            let request = apiRequest.request()
             let task = URLSession.shared.dataTask(with: request) {
                 (data, response, error) in
                 do {

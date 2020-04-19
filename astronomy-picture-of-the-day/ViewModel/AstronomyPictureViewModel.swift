@@ -11,26 +11,32 @@ import RxSwift
 
 protocol AstronomyPictureViewModelProtocol {
     func didloadAstronomyPictures()
-    
 }
 
 class AstronomyPictureViewModel {
-    
-    private let apiCalling = APICalling()
-    private let disposeBag = DisposeBag()
-    private let request = APIRequest()
+    private let apiCalling: APICalling
+    private let dispose: DisposeBag
+    private let requester: APIRequester
     var delegate: AstronomyPictureViewModelProtocol?
     var astronomyPicture: AstronomyPicture?
     
+    init(apiCalling: APICalling = APICalling(),
+         requester: APIRequester = APIRequester(),
+         dispose: DisposeBag = DisposeBag()
+    ) {
+        self.apiCalling = apiCalling
+        self.requester = requester
+        self.dispose = dispose
+    }
+    
     func loadAstronomyPictures() {
-        let result : Observable<AstronomyPicture> = apiCalling.send(apiRequest: request)
+        let result : Observable<AstronomyPicture> = apiCalling.send(apiRequest: requester)
         result.observeOn(MainScheduler.instance)
             .subscribe(onNext: { (astronomyPicture: AstronomyPicture) in
                 self.astronomyPicture = astronomyPicture
-                print(astronomyPicture)
                 self.delegate?.didloadAstronomyPictures()
                 })
-            .disposed(by: disposeBag)
+            .disposed(by: dispose)
     }
     
 }

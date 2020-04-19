@@ -8,14 +8,20 @@
 
 import Foundation
 
-class APIRequest {
+class APIRequester {
     
-    let baseURL = URL(string: "https://api.nasa.gov/planetary/apod?api_key=qFamLEfakF4DtHjxKb6BZcOu9wLC23nPZjBUIc91")
-    var method = RequestType.GET
+   private let method: RequestType
+   private let url: String
     
+    init(url: String = Endpoint.baseUrl,
+         method: RequestType = RequestType.GET
+    ) {
+        self.method = method
+        self.url = url
+    }
     
-    func request(with baseURL: URL) -> URLRequest {
-        var request = URLRequest(url: baseURL)
+    func request() -> URLRequest {
+        var request = URLRequest(url: URL(string: url)!)
         request.httpMethod = method.rawValue
         request.addValue("aplication/json", forHTTPHeaderField: "Accept")
         return request
